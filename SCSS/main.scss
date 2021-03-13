@@ -1,0 +1,58 @@
+@import "_variables.scss";
+
+html{
+    scroll-behavior: smooth;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: $text-color-light;
+}
+
+.nav-item {
+    color: $text-color-light;
+}
+
+.head{
+    background: $main;
+}
+
+#banner{
+    background: linear-gradient($secondary, $main);
+}
+
+a:hover{
+    color: $text-color-light;
+}
+
+#category-menu{
+    background-color: $secondary;
+}
+
+.footer{
+    background-color: $secondary;
+}
+
+#category-section{
+    background-color: $background-category;
+}
+
+.category-text-left{
+    margin-top: 6%;
+}
+
+.photo-right{
+    /*padding: 15%;*/
+    height: 70%;
+    width: 80%;
+    margin-top: 7%;
+    box-shadow: 30px -20px 0px 0px $shadow;
+}
+
+.photo-left{
+    height: 70%;
+    width: 80%;
+    margin-top: 7%;
+    margin-left: 10%;
+    box-shadow: -30px -20px 0px 0px $shadow;
+}
