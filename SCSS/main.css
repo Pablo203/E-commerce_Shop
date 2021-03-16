@@ -24,7 +24,21 @@ html {
 }
 
 #banner {
-  background: linear-gradient(#3E7588, #4CBBC6);
+  background-color: #4CBBC6;
+  opacity: 70%;
+  position: relative;
+  /*text-align: center;*/
+  color: #000000;
+}
+
+#banner-text {
+  font-size: 30px;
+}
+
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 10%;
 }
 
 a:hover {

@@ -18,9 +18,22 @@ html{
 }
 
 #banner{
-    background: linear-gradient($secondary, $main);
+    background-color: $main;
+    opacity: 70%;
+    position: relative;
+    /*text-align: center;*/
+    color: $text-color;
 }
 
+#banner-text{
+    font-size: 30px;
+}
+
+.centered{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
 a:hover{
     color: $text-color-light;
 }
