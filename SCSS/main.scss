@@ -5,12 +5,8 @@ html{
 }
 
 .nav-link {
-    text-decoration: none;
-    color: $text-color-light;
-}
-
-.nav-item {
-    color: $text-color-light;
+    /*text-decoration: none;*/
+    color: #FFFFFF;
 }
 
 .head{
@@ -23,6 +19,10 @@ html{
     position: relative;
     /*text-align: center;*/
     color: $text-color;
+}
+
+.navbar-toogler{
+    border-color: #FFFFFF;
 }
 
 #banner-text{

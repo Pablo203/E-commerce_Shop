@@ -1,3 +1,4 @@
+/*$main: #4CBBC6;*/
 /*$main: #7223e9;
 $main2: #C651CD;
 $main3: #363636;
@@ -11,24 +12,24 @@ html {
 }
 
 .nav-link {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-.nav-item {
+  /*text-decoration: none;*/
   color: #FFFFFF;
 }
 
 .head {
-  background: #4CBBC6;
+  background: #032c30;
 }
 
 #banner {
-  background-color: #4CBBC6;
+  background-color: #032c30;
   opacity: 70%;
   position: relative;
   /*text-align: center;*/
   color: #000000;
+}
+
+.navbar-toogler {
+  border-color: #FFFFFF;
 }
 
 #banner-text {
