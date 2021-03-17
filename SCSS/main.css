@@ -7,6 +7,11 @@ html {
   color: #FFFFFF;
 }
 
+#header-text {
+  font-size: 30px;
+  float: right;
+}
+
 .head {
   background: #4CBBC6;
 }
@@ -33,6 +38,7 @@ html {
 
 .centered {
   position: absolute;
+  opacity: 120%;
   top: 30%;
   left: 10%;
 }
@@ -57,6 +63,12 @@ a:hover {
   margin-top: 6%;
 }
 
+#search-button {
+  height: 5%;
+  width: 5%;
+  border-radius: 10px;
+}
+
 .photo-right {
   /*padding: 15%;*/
   height: 70%;
@@ -71,4 +83,9 @@ a:hover {
   margin-top: 7%;
   margin-left: 10%;
   box-shadow: -30px -20px 0px 0px #103042;
+}
+
+.navbar-brand {
+  height: 70%;
+  width: 70%;
 }

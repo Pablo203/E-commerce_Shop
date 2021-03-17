@@ -19,18 +19,23 @@
 </head>
 
 <body>
-    <!-- Nav Menu Area Start -->
 
+    <!-- Nav Menu Area Start -->
+    <div class="container-fluid">
+        <p class="language">
+            pl en
+        </p>
+    </div>
     <div class="jumbotron-fluid head sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="index.html">
-                <img class="img-fluid" src="IMG/logo.png" alt="Something went wrong">
+                <img class="img-fluid" src="#" alt="Something went wrong">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#"  style="color: #FFFFFF;">
                             <h3>
@@ -52,6 +57,11 @@
                             </h3>
                         </a>
                     </li>
+                    <form class="form-inline">
+                        <input type="search" class="form-control" placeholder="Szukaj">
+                        <button type="submit" class="btn btn-light" id="search-button">&#x1F50D;</button>
+                        <!--&#x1F50D;-->
+                    </form>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <a class="navbar-brand">
@@ -59,9 +69,9 @@
                     </a>
                     <li class="nav-item">
                         <a class="nav-link" href="log.html" style="color: #FFFFFF;">
-                            <h3>
+                            <h2>
                                 Logowanie
-                            </h3>
+                            </h2>
                         </a>
                     </li>
                 </ul>
