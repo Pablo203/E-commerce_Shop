@@ -22,12 +22,18 @@
 
     <!-- Nav Menu Area Start  flex-row-reverse-->
    <div class="container d-flex justify-content-end">
-        <p class="language">
+        <!--<p class="language" id="pl" qonclick>
             pl
         </p><br>
-        <p>
+        <p onclick="language">
             en
-        </p>
+        </p>-->
+        <button class="btn btn-light" onclick="languagepl()">
+            pl
+        </button>
+        <button class="btn btn-light" onclick="languageen()">
+            en
+        </button>
     </div>
     <div class="jumbotron-fluid head sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -61,8 +67,8 @@
                         </a>
                     </li>
                     <form class="form-inline">
-                        <input type="search" class="form-control" placeholder="Szukaj">
-                        <button type="submit" class="btn btn-light" id="search-button">&#x1F50D;</button>
+                        <input type="search" class="form-control" name="search" placeholder="Szukaj">
+                        <button type="submit" class="btn btn-light justify-content-center" id="search-button">&#x1F50D;</button>
                     </form>
                 </ul>
                 <ul class="navbar-nav ml-auto">
@@ -71,8 +77,9 @@
                     </a>
                     <li class="nav-item">
                         <a class="nav-link" href="log.html" style="color: #FFFFFF;">
-                            <h2>
-                                Logowanie
+                            <h2 id="log">
+                                Logowanie / <br>
+                                Rejestracja
                             </h2>
                         </a>
                     </li>
@@ -163,6 +170,8 @@
     <footer class="jumbotron-fluid footer">
         asdasda
     </footer>
+
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
