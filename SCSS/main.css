@@ -20,6 +20,10 @@ html {
   color: #FFFFFF;
 }
 
+.language {
+  margin-right: 20px;
+}
+
 #banner {
   background-color: #4CBBC6;
   opacity: 70%;
@@ -64,8 +68,8 @@ a:hover {
 }
 
 #search-button {
-  height: 5%;
-  width: 5%;
+  height: 40px;
+  width: 40px;
   border-radius: 10px;
 }
 
@@ -83,9 +87,4 @@ a:hover {
   margin-top: 7%;
   margin-left: 10%;
   box-shadow: -30px -20px 0px 0px #103042;
-}
-
-.navbar-brand {
-  height: 70%;
-  width: 70%;
 }
