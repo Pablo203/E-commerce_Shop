@@ -4,8 +4,11 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    font-family: $font-family;
+}
+
 .nav-link {
-    /*text-decoration: none;*/
     color: #FFFFFF;
 }
 
@@ -31,7 +34,6 @@ html{
     background-color: $main;
     opacity: 70%;
     position: relative;
-    /*text-align: center;*/
     color: $text-color;
 }
 
@@ -77,15 +79,14 @@ a:hover{
 
 
 .photo-right{
-    /*padding: 15%;*/
-    height: 70%;
+    /*height: 70%;*/
     width: 80%;
     margin-top: 7%;
     box-shadow: 30px -20px 0px 0px $shadow;
 }
 
 .photo-left{
-    height: 70%;
+    //height: 70%;
     width: 80%;
     margin-top: 7%;
     margin-left: 10%;

@@ -1,0 +1,34 @@
+@import "_variables.scss";
+
+.login-block {
+    width: 20%;
+    height: 100%;
+    //   top right bottom left
+    margin: 8% 0% 0% 40%;
+    background-color: $secondary;
+    color: $text-color-light;
+    border: 1px solid black;
+    border-radius: 10%;
+    align-items: center;
+}
+.login-element{
+    width: 100%;
+    height: 30%;
+}
+
+.header-text-center{
+    text-align: center;
+}
+
+a:link{
+    color: $a-color;
+}
+
+a:hover, a:visited{
+    color: $text-color-light;
+    text-decoration: none;
+}
+
+/*a:visited{
+    color: $text-color-light;
+}*/

@@ -2,8 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: verdana;
+}
+
 .nav-link {
-  /*text-decoration: none;*/
   color: #FFFFFF;
 }
 
@@ -29,7 +32,6 @@ html {
   background-color: #4CBBC6;
   opacity: 70%;
   position: relative;
-  /*text-align: center;*/
   color: #000000;
 }
 
@@ -53,11 +55,11 @@ a:hover {
 }
 
 #category-menu {
-  background-color: #3E7588;
+  background-color: #4588af;
 }
 
 .footer {
-  background-color: #3E7588;
+  background-color: #4588af;
 }
 
 #category-section {
@@ -75,15 +77,13 @@ a:hover {
 }
 
 .photo-right {
-  /*padding: 15%;*/
-  height: 70%;
+  /*height: 70%;*/
   width: 80%;
   margin-top: 7%;
   box-shadow: 30px -20px 0px 0px #103042;
 }
 
 .photo-left {
-  height: 70%;
   width: 80%;
   margin-top: 7%;
   margin-left: 10%;
