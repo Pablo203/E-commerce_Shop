@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -41,6 +42,7 @@ body {
 
 #banner-text {
   font-size: 30px;
+  opacity: 100%;
 }
 
 .centered {
@@ -60,6 +62,7 @@ a:hover {
 
 .footer {
   background-color: #4588af;
+  margin: 5% 0% -1% 0%;
 }
 
 #category-section {
@@ -93,4 +96,8 @@ a:hover {
 .text-center {
   text-align: center;
   margin: 5% 0% 5% 0%;
+}
+
+.textarea {
+  margin-bottom: 5%;
 }

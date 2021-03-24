@@ -1,12 +1,14 @@
 .login-block {
-  width: 20%;
+  /*width: 20%;*/
   height: 100%;
-  margin: 8% 0% 0% 40%;
+  margin-top: 8%;
+  margin-left: 20%;
+  margin-right: -8%;
   background-color: #4588af;
   color: #FFFFFF;
   border: 1px solid black;
   border-radius: 10%;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .login-element {
@@ -26,7 +28,3 @@ a:hover, a:visited {
   color: #FFFFFF;
   text-decoration: none;
 }
-
-/*a:visited{
-    color: $text-color-light;
-}*/
