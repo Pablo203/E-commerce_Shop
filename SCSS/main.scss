@@ -21,6 +21,7 @@ body{
 .head{
     background: $main;
     margin-top: -1px;
+    width: 102%;
 }
 
 .menu-option{
@@ -36,6 +37,7 @@ body{
     opacity: 70%;
     position: relative;
     color: $text-color;
+    width: 102%;
 }
 
 .navbar-toogler{
@@ -63,11 +65,14 @@ a:hover{
 
 .footer{
     background-color: $secondary;
+    color: $text-color-light;
     margin: 5% 0% -1% 0%;
+    width: 102%;
 }
 
 #category-section{
     background-color: $background-category;
+    width: 102%;
 }
 
 .category-text-left{
@@ -104,4 +109,8 @@ a:hover{
 
 .textarea{
     margin-bottom: 5%;
+}
+
+.footer-text {
+    margin-top: 5%; 
 }
