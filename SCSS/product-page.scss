@@ -1,0 +1,29 @@
+ .main{
+    border: 1px solid black;
+    margin-top: 2%;
+}
+
+.product-title{
+    @extend .main;
+    text-align: center;
+}
+
+.price{
+    @extend .main;
+}
+
+.shipment{
+    @extend .main;
+}
+
+.slide{
+    @extend .main;
+}
+
+.plus{
+    margin-left: 7%;
+}
+
+.deliver{
+    font-weight: bold;
+}
