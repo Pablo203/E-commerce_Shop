@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dream</title>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{% static 'shop/bootstrap-4.0.0-dist/css/bootstrap.min.css' %}">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="{% static 'shop/bootstrap-4.0.0-dist/js/bootstrap.min.js' %}"></script>
+
+    <meta charset="UTF-8">
+    <meta author="Paweł Rosa, Kamil Oberaj">
+    <link rel="stylesheet" href="{% static 'shop/main.css' %}">
+    <link rel="stylesheet" href="{% static 'shop/product_search.css' %}">
+</head>
+
+<body>
+
+    <!-- Nav Menu Area Start -->
+    <!--
+    <div class="container d-flex justify-content-end">
+        <button class="btn btn-light" onclick="languagepl()">
+            pl
+        </button>
+        <button class="btn btn-light" onclick="languageen()">
+            en
+        </button>
+    </div>
+-->
+    <div class="jumbotron-fluid head sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" style="width: 15%;" href="index.html">
+                <img class="img-fluid" src="IMG/logo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <form class="form-inline">
+                        <input type="search" class="form-control" name="search" placeholder="Szukaj">
+                        <button type="submit" class="btn btn-light justify-content-center"
+                            id="search-button">&#x1F50D;</button>
+                    </form>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <a class="navbar-brand">
+                        <img class="img-fluid" href="index.html" src="IMG/cart.png" alt="Something went wrong">
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="log.html" style="color: #FFFFFF;">
+                            <h3 id="log">
+                                Logowanie / <br>
+                                Rejestracja
+                            </h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Nav Menu Area End -->
+
+    <!-- Search Output Area Start -->
+
+    <div class="container searched-category">
+        <b>
+            Wyszukana kategoria:
+        </b>
+        " "
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-3 filter-menu">
+                <p class="segment-head">
+                    Sortowanie:<br>
+                </p>
+                <p class="segment-body">
+                    <form class="segment-body">
+                        <input type="checkbox"> Od najniższej ceny<br><br>
+                        <input type="checkbox"> Od najwyższej ceny<br><br>
+                        <input type="checkbox"> Od najszybszej dostawy<br><br>
+                        <input type="checkbox"> Od najdłuższej dostawy<br>
+                    </form>
+                </p>
+            </div>
+            <div class="col-1"></div>
+
+            <!-- Products List Start -->
+            <div class="col-8 first">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="photo-position">
+                            <img class="img-fluid" src="IMG/jam-jar.jpg">
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="col-6">
+
+                            <br>
+                            <p>
+                                <b>
+                                    Produkt 1
+                                </b>
+                            </p><br>
+                            <p>
+                                127<sup>99</sup>zł
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <a href="#">
+                <div class="col-8 position">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="photo-position">
+                                <img class="img-fluid" src="IMG/jam-jar.jpg">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <br>
+                            <p>
+                                <b>
+                                    Produkt 2
+                                </b>
+                            </p><br>
+                            <p>
+                                127<sup>99</sup>zł
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+
+        </div>
+
+    </div>
+    <!-- Products List End-->
+
+    <!-- Search Output Area End -->
+
+    <!-- Footer Area Start -->
+    <footer class="jumbotron-fluid footer">
+        <div class="row">
+            <div class="col-lg-1 col-sm-1 col-xs-1"></div>
+            <div class="col-lg-3 col-sm-9 col-xs-9">
+                <form>
+                    <div class="form-group">
+                        <p class="footer-text">
+                            <label for="footer-email">Adres Email</label>
+                            <input type="email" class="form-control" id="footer-email" placeholder="Adres Email">
+                            <label for="exampleFormControlTextarea1">Wiadomość</label>
+                            <textarea class="form-control textarea" id="exampleFormControlTextarea1"
+                                rows="5"></textarea>
+                            <button type="submit" class="btn btn-light justify-content-center">Wyślij</button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4 col-sm-2 col-xs-2"></div>
+            <div class="col-lg-4 col-sm-9 col-xs-9">
+                <p class="footer-text">
+                    Kontakt z nami:<br><br>
+                    <b>Email:</b><br>
+                    example@gmail.com<br>
+                    <b>Telefon:</b><br>
+                    +48 912 912 912<br>
+                    <b>Adres:</b><br>
+                    Ul. Polna 12 44-928
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+</body>
+
+</html>
