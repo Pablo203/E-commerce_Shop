@@ -13,10 +13,11 @@
     <!-- Latest compiled JavaScript -->
     <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta author="Paweł Rosa, Kamil Oberaj">
     <link rel="stylesheet" href="SCSS/main.css">
-    <link rel="stylesheet" href="SCSS/product-page.css">
+    <link rel="stylesheet" href="SCSS/product_search.css">
 </head>
 
 <body>
@@ -67,56 +68,89 @@
 
     <!-- Nav Menu Area End -->
 
+    <!-- Search Output Area Start -->
 
-    <!-- Product Area Start -->
-
-    <div class="container main">
-        <div class="container product-title">
-            Nazwa produktu
-        </div>
-
-        <div class="container slide">a</div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-5 price">
-                    <p>
-                        <b>Cena:</b>
-                        <br>
-                        127<sup>99</sup>zł<br>
-                    </p>
-                    <button class="btn btn-light">Dodaj do koszyka</button>
-
-                    <button class="btn btn-light plus">+</button>
-                    <button class="btn btn-light" disabled>1</button>
-                    <button class="btn btn-light">-</button>
-                    <br><br>
-                    <button class="btn btn-light">Kup teraz</button>
-                </div>
-                <div class="col-2"></div>
-                <div class="col-5 shipment">
-                    <p>
-                        <p class="deliver">
-                            Sposób dostawy:<br>
-                        </p>
-                        <p class="deliver">
-                            Czas dostawy:<br>
-                        </p>
-                        <p class="deliver">
-                            Koszt dostawy:<br>
-                        </p>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container main">
-            Opis produktu:
-        </div>
+    <div class="container searched-category">
+        <b>
+            Wyszukana kategoria:
+        </b>
+        " "
     </div>
 
-    <!-- Product Area End -->
+    <div class="container">
 
+        <div class="row">
+            <div class="col-3 filter-menu">
+                <p class="segment-head">
+                    Sortowanie:<br>
+                </p>
+                <p class="segment-body">
+                    <form class="segment-body">
+                        <input type="checkbox"> Od najniższej ceny<br><br>
+                        <input type="checkbox"> Od najwyższej ceny<br><br>
+                        <input type="checkbox"> Od najszybszej dostawy<br><br>
+                        <input type="checkbox"> Od najdłuższej dostawy<br>
+                    </form>
+                </p>
+            </div>
+            <div class="col-1"></div>
+
+            <!-- Products List Start -->
+            <div class="col-8 first">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="photo-position">
+                            <img class="img-fluid" src="IMG/jam-jar.jpg">
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="col-6">
+
+                            <br>
+                            <p>
+                                <b>
+                                    Produkt 1
+                                </b>
+                            </p><br>
+                            <p>
+                                127<sup>99</sup>zł
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <a href="#">
+                <div class="col-8 position">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="photo-position">
+                                <img class="img-fluid" src="IMG/jam-jar.jpg">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <br>
+                            <p>
+                                <b>
+                                    Produkt 2
+                                </b>
+                            </p><br>
+                            <p>
+                                127<sup>99</sup>zł
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+
+        </div>
+
+    </div>
+    <!-- Products List End-->
+
+    <!-- Search Output Area End -->
 
     <!-- Footer Area Start -->
     <footer class="jumbotron-fluid footer">
