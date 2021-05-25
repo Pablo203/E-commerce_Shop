@@ -19,3 +19,13 @@ def login(request):
 def register(request):
     template = loader.get_template('shop/registration.html')
     return HttpResponse(template.render({}, request))
+
+
+def search(request):
+    template = loader.get_template('shop/product-search.html')
+    return HttpResponse(template.render({}, request))
+
+
+def product(request):
+    template = loader.get_template('shop/product-page.html')
+    return HttpResponse(template.render({}, request))
