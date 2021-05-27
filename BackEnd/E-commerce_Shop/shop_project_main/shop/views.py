@@ -1,7 +1,8 @@
+from django.http.response import Http404
 from django.shortcuts import render
 from django.template import loader
 from django.http import HttpResponse
-from django.template import loader
+
 
 # Create your views here.
 
@@ -29,3 +30,10 @@ def search(request):
 def product(request):
     template = loader.get_template('shop/product-page.html')
     return HttpResponse(template.render({}, request))
+
+
+def handler403(request):
+
+
+def handler404(request):
+    

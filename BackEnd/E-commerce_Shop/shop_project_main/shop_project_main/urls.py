@@ -23,4 +23,5 @@ urlpatterns = [
     path('register/', include('shop.urls')),
     path('search/', include('shop.urls')),
     path('product/', include('shop.urls')),
+    path('404/', include('shop.urls'))
 ]
