@@ -9,5 +9,4 @@ urlpatterns = [
     path('register/', views.register, name='register'),
     path('search/', views.search, name="search"),
     path('product/', views.product, name="product"),
-    path('404/', views.handler404, name="404")
 ]

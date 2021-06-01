@@ -30,10 +30,3 @@ def search(request):
 def product(request):
     template = loader.get_template('shop/product-page.html')
     return HttpResponse(template.render({}, request))
-
-
-def handler403(request):
-
-
-def handler404(request):
-    
