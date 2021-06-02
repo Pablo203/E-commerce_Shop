@@ -59,7 +59,7 @@ handler403 = 'shop.views.error403'
 handler404 = 'shop.views.error404'
 handler500 = 'shop.views.error500'
 
-TEMPLATE_DIR = os.path.join(BASE_DIR, 'shop/templates/shop')
+TEMPLATE_DIR = os.path.join(BASE_DIR, '/templates/')
 
 TEMPLATES = [
     {
@@ -127,7 +127,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = os.path.join(BASE_DIR, '/static/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
