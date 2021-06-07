@@ -40,31 +40,12 @@
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav mr-auto">
-                    <!--<li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #FFFFFF;">
-                            <h3>
-                                Link 1
-                            </h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #FFFFFF;">
-                            <h3>
-                                Link 2
-                            </h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: #FFFFFF;">
-                            <h3>
-                                Link 3
-                            </h3>
-                        </a>
-                    </li>-->
                     <form class="form-inline">
-                        <input type="search" class="form-control" name="search" placeholder="Szukaj">
-                        <button type="submit" class="btn btn-light justify-content-center"
-                            id="search-button">&#x1F50D;</button>
+                        <div class="col-sm-3 col-lg-12">
+                            <input type="search" class="form-control" name="search" placeholder="Szukaj" style="width: 70%; float: left;">
+                            <button type="submit" class="btn btn-light justify-content-center" style="float: left;"
+                                id="search-button">&#x1F50D;</button>
+                        </div>
                     </form>
                 </ul>
                 <ul class="navbar-nav ml-auto">
@@ -92,11 +73,11 @@
     <div class="jumbotron-fluid" id="banner">
         <img src="IMG/parcel2.jpeg" class="img-fluid">
         <div class="centered">
-            <h1>
+            <p class="banner-text-head">
                 Dream
-            </h1>
+            </p>
             <br>
-            <p id="banner-text">
+            <p class="banner-text">
                 Wszystko czego kiedykolwiek<br>
                 możesz zapragnąć
             </p>
@@ -114,11 +95,12 @@
             </h2>
         </p>
     </div>
+
     <div class="container-fluid" id="category-section">
         <div class="row">
             <div class="col-sm-12 col-lg-1">
             </div>
-            <div class="col-sm-12 col-lg-5">
+            <div class="col-sm-12 col-lg-5 order-1">
                 <p class="category-text-left">
                     <h3>
                         Jakość
@@ -130,17 +112,18 @@
                     aby dostarczyć kupującemu jak najlepszy produkt
                 </p>
             </div>
-            <div class="col-sm-12 col-lg-6">
+            <div class="col-sm-12 col-lg-6 order-2">
                 <img class="img-fluid photo-right" src="IMG/jam-jar.jpg">
             </div>
         </div>
     </div>
+
     <div class="container-fluid" id="category-section">
         <div class="row">
-            <div class="col-sm-12 col-lg-6">
-                <img class="img-fluid photo-left" src="IMG/jam-jar.jpg">
+            <div class="col-sm-12 col-lg-6 order-4">
+                <img class="img-fluid photo-right" src="IMG/jam-jar.jpg">
             </div>
-            <div class="col-sm-12 col-lg-5">
+            <div class="col-sm-12 col-lg-5 order-3">
                 <p class="category-text-left">
                     <h3>
                         Trwałość
@@ -158,11 +141,12 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid" id="category-section">
         <div class="row">
             <div class="col-sm-12 col-lg-1">
             </div>
-            <div class="col-sm-12 col-lg-5">
+            <div class="col-sm-12 col-lg-5 order-5">
                 <p class="category-text-left">
                     <h3>
                         Gwarancja
@@ -177,28 +161,36 @@
                     użytkowanie produktu.
                 </p>
             </div>
-            <div class="col-sm-12 col-lg-6">
+            <div class="col-sm-12 col-lg-6 order-6">
                 <img class="img-fluid photo-right" src="IMG/jam-jar.jpg">
             </div>
         </div>
     </div>
+
     <!-- Main Segment Area End -->
 
+    <!-- Footer Segment Area Start -->
     <footer class="jumbotron-fluid footer">
         <div class="row">
             <div class="col-lg-1 col-sm-1 col-xs-1"></div>
-            <div class="col-lg-3 col-sm-9 col-xs-9">
+            <div class="col-lg-3 col-sm-6 col-xs-6">
                 <form>
                     <div class="form-group">
                         <p class="footer-text">
-                            <label for="footer-email">Adres Email</label>
-                            <input type="email" class="form-control" id="footer-email" placeholder="Adres Email">
+                            <div class="col-sm-6 col-lg-12">
+                                <label for="footer-email">Adres Email</label>
+                                <input type="email" class="form-control" id="footer-email" placeholder="Adres Email"
+                                    size="20">
+                            </div>
 
-                            <label for="exampleFormControlTextarea1">Wiadomość</label>
-                            <textarea class="form-control textarea" id="exampleFormControlTextarea1"
-                                rows="5"></textarea>
-                                
-                            <button type="submit" class="btn btn-light justify-content-center">Wyślij</button>
+                            <div class="col-lg-6 col-lg-12">
+                                <label for="exampleFormControlTextarea1">Wiadomość</label>
+                                <textarea class="form-control textarea" id="exampleFormControlTextarea1" rows="5"
+                                    cols="3" size="20"></textarea>
+                            </div>
+                            <div class="col-lg-6 col-lg-12">
+                                <button type="submit" class="btn btn-light justify-content-center">Wyślij</button>
+                            </div>
                         </p>
                     </div>
                 </form>
@@ -206,18 +198,20 @@
             <div class="col-lg-4 col-sm-2 col-xs-2"></div>
             <div class="col-lg-4 col-sm-9 col-xs-9">
                 <p class="footer-text">
-                    Kontakt z nami:<br><br>
-                    <b>Email:</b><br>
-                    example@gmail.com<br>
-                    <b>Telefon:</b><br>
-                    +48 912 912 912<br>
-                    <b>Adres:</b><br>
-                    Ul. Polna 12 44-928
+                    <div class="col-sm-6">
+                        Kontakt z nami:<br><br>
+                        <b>Email:</b><br>
+                        example@gmail.com<br>
+                        <b>Telefon:</b><br>
+                        +48 912 912 912<br>
+                        <b>Adres:</b><br>
+                        Ul. Polna 12 44-928
+                    </div>
                 </p>
             </div>
         </div>
     </footer>
-
+    <!-- Footer Segment Area End -->
     <script src="JS/main.js"></script>
 </body>
 
