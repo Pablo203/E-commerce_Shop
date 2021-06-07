@@ -1,0 +1,36 @@
+.main {
+  margin-top: 2%;
+}
+
+.product-title {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.price {
+  margin-top: 2%;
+}
+
+.shipment {
+  margin-top: 2%;
+}
+
+.slide {
+  margin-top: 2%;
+  /*width: 90%;
+    height: 90%;
+    margin-left: 5%;*/
+  margin-bottom: 3%;
+}
+
+.plus {
+  margin-left: 7%;
+}
+
+.deliver {
+  font-weight: bold;
+}
+
+.last {
+  margin-bottom: 5%;
+}
