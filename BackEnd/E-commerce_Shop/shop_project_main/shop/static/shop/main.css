@@ -35,16 +35,32 @@ body {
   opacity: 70%;
   position: relative;
   color: #000000;
-  width: 102%;
+  width: 100%;
 }
 
 .navbar-toogler {
   border-color: #FFFFFF;
 }
 
-#banner-text {
-  font-size: 30px;
+.banner-text-head {
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.banner-text {
+  font-size: 3vw;
   opacity: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .banner-text {
+    margin-top: -10%;
+    font-size: 3vh;
+  }
+  .banner-text-head {
+    margin-top: -10%;
+    font-size: 3vh;
+  }
 }
 
 .centered {
@@ -85,17 +101,17 @@ a:hover {
 }
 
 .photo-right {
-  /*height: 70%;*/
+  margin-left: 3%;
   width: 80%;
   margin-top: 7%;
-  box-shadow: 30px -20px 0px 0px #103042;
+  box-shadow: 30px -20px 0px 0px #3E7588;
 }
 
 .photo-left {
   width: 80%;
   margin-top: 7%;
   margin-left: 10%;
-  box-shadow: -30px -20px 0px 0px #103042;
+  box-shadow: -30px -20px 0px 0px #3E7588;
 }
 
 .text-center {
