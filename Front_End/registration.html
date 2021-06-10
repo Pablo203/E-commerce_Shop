@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -8,16 +9,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'shop/bootstrap-4.0.0-dist/css/bootstrap.min.css' %}">
 
     <!-- Latest compiled JavaScript -->
-    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="{% static 'shop/bootstrap-4.0.0-dist/js/bootstrap.min.js' %}"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta author="Paweł Rosa, Kamil Oberaj">
-    <link rel="stylesheet" href="SCSS/main.css">
-    <link rel="stylesheet" href="SCSS/log.css">
+    <link rel="stylesheet" href="{% static 'shop/main.css' %}">
+    <link rel="stylesheet" href="{% static 'shop/log.css' %}">
 </head>
 
 <body>
@@ -25,8 +26,8 @@
 
     <div class="jumbotron-fluid head sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" style="width: 15%;" href="index.html">
-                <img class="img-fluid" src="IMG/logo.png">
+            <a class="navbar-brand" style="width: 15%;" href="{% url 'shop:index' %}">
+                <img class="img-fluid" src="{% static 'shop/IMG/logo.png' %}">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -63,7 +64,7 @@
                     </div>
                     <div class="login-element">
                         <label for="password">Hasło:</label><br>
-                        <input type="text" id="password" name="password" required>
+                        <input type="text" id="password" name="password" required method="POST">
                     </div>
                     <div class="login-element">
                         <br><br>
@@ -72,7 +73,7 @@
                 </form>
                 <br><br>
                 <h6>
-                    <a href="log.html">
+                    <a href="{% url 'shop:login' %}">
                         Zaloguj się
                     </a>
                 </h6>
