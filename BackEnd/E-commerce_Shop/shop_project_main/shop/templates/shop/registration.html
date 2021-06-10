@@ -1,4 +1,5 @@
 {% load static %}
+{% crsf_token %}
 <!DOCTYPE html>
 <html>
 
@@ -64,7 +65,7 @@
                     </div>
                     <div class="login-element">
                         <label for="password">Hasło:</label><br>
-                        <input type="text" id="password" name="password" required>
+                        <input type="text" id="password" name="password" required method="POST">
                     </div>
                     <div class="login-element">
                         <br><br>
