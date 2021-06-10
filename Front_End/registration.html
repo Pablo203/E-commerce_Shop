@@ -56,14 +56,18 @@
                 <h1>
                     Zarejestruj się
                 </h1>
-                <form>
+                <form method="POST">
                     <div class="login-element"><br>
-                        <label for="login">Login:</label><br>
-                        <input type="text" id="login" name="login" method="POST" required><br><br>
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email" required><br><br>
                     </div>
                     <div class="login-element">
                         <label for="password">Hasło:</label><br>
                         <input type="text" id="password" name="password" required>
+                    </div>
+                    <div class="login-element">
+                        <label for="passwordCheck">Potwierdź hasło:</label><br>
+                        <input type="text" id="passwordCheck" name="passwordCheck" required>
                     </div>
                     <div class="login-element">
                         <br><br>
