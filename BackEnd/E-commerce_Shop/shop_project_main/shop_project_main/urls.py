@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import handler400, handler403, handler404, handler500
+import django
 
 app_name="shop"
 
@@ -24,6 +25,12 @@ handler403 = "shop.views.error403"
 handler404 = 'shop.views.error404'
 handler500 = "shop.views.error500"
 
+def custom_page_not_found(request):
+    return django.views.defaults.page_not_found(request, None)
+
+def custom_server_error(request):
+    return django.views.defaults.server_error(request)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('shop.urls')),
@@ -31,4 +38,6 @@ urlpatterns = [
     path('register/', include('shop.urls')),
     path('search/', include('shop.urls')),
     path('product/', include('shop.urls')),
+    path("404/", custom_page_not_found),
+    path("500/", custom_server_error),
 ]
