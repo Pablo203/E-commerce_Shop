@@ -23,9 +23,9 @@
 <?php
     include('SCRIPT/header.php');
 ?>
-<center> <h1> Login Error!</h1>    
+<center> <h1> Register Error!</h1>    
     <?php
-        echo 'Credentials given are incorrect - check and log in again!';
+        echo 'Registration failed! Please contact our support line';
     ?>
 </center>
 <?php
