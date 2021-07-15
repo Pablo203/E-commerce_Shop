@@ -1,0 +1,39 @@
+.searched-category {
+  border: 1px solid black;
+  margin-top: 3%;
+  font-size: 20px;
+  padding: 1%;
+}
+
+.filter-menu {
+  border: 1px solid black;
+  margin-top: 2%;
+  height: 100%;
+}
+
+.segment-head {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.segment-body {
+  font-size: 15px;
+}
+
+.position {
+  margin-left: 33.5%;
+  margin-top: 2%;
+  border: 1px solid black;
+  height: 100%;
+}
+
+.first {
+  margin-top: 3.3% !important;
+  border: 1px solid black;
+  height: 100%;
+}
+
+.photo-position {
+  width: 100%;
+  padding: 5%;
+}
