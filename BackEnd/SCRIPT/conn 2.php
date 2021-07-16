@@ -15,7 +15,7 @@ if (!$mysqli) {
     printf("Connect failed: %s\n", mysqli_connect_error());
     exit();
 }  else {
-    //echo "<i>connection-ok</i><br />";
+    echo "<i>connection-ok</i><br />";
 }
 
 

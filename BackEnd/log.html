@@ -56,10 +56,11 @@
                 <h1>
                     Zaloguj się
                 </h1>
-                <form method="POST" action="SCRIPT/login_script.php">
+                <form method="POST" action="SCRIPT/login-script.php">
                     <div class="login-element"><br>
-                        <label for="login">Login:</label><br>
-                        <input type="text" id="login" name="user" required><br><br>
+                        <label for="login">Email:</label><br>
+                        <input type="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                         id="email" name="email" required><br><br>
                     </div>
                     <div class="login-element">
                         <label for="password">Hasło:</label><br>

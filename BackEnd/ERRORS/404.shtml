@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="robots" content="noindex,nofollow,noarchive" />
+	<title>Błąd 404 - Nie znaleziono</title>
+	<style type="text/css">body,html{height:100%}body,p{margin:0}body{width:100%;background:#f4f4f4;text-align:center;display:table;font:13px Arial,sans-serif;color:#303030}a{color:#093994;text-decoration:none}a:hover{text-decoration:underline}#content{display:table-cell;vertical-align:middle;padding:25px}#content #number{font-size:150px;font-weight:700;color:rgba(10,60,150,.8);text-shadow:1px 4px 6px #def,0 0 0 #000,1px 4px 6px #def}#content #shortDesc{margin-bottom:10px;font-size:24px}#footer{font-style:italic;position:fixed;left:0;right:0;bottom:0;padding-bottom:25px}</style>
+</head>
+<body>
+	<div id="content">
+		<p id="number">404</p>
+		<p id="shortDesc">Nie znaleziono</p>
+		<p>Nie odnaleziono strony o podanym adresie.</p>
+	</div>
+	<div id="footer">Hosting zapewnia: <a href="https://slotex.pl" target="_blank" rel="nofollow">Slotex.pl</a></div>
+</body>
+</html>

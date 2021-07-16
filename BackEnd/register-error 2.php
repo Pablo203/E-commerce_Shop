@@ -25,7 +25,7 @@
 ?>
 <center> <h1> Register Error!</h1>    
     <?php
-        echo 'Email already exist or registration failed! Please contact our support line';
+        echo 'Registration failed! Please contact our support line';
     ?>
 </center>
 <?php
