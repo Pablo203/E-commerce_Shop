@@ -69,8 +69,11 @@ table{
 }
 
 .search-output{
+    position: fixed;
     background-color: white;
     height: 225px;
+    width: 700px;
+    margin-top: 1.5%;
     border-radius: 20px;
 }
 
