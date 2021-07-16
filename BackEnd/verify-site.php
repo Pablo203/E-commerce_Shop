@@ -23,11 +23,10 @@
 <?php
     include('SCRIPT/header.php');
 ?>
-<center> <h1> Login Error!</h1>    
+<center> <h1> Register Success!</h1> </center>    
     <?php
-        echo 'Credentials given are incorrect - check and log in again!';
+       echo 'Verification link send on your email!';
     ?>
-</center>
 <?php
     include('SCRIPT/footer.php');
 ?>

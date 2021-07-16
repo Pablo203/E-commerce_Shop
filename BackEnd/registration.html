@@ -56,18 +56,26 @@
                 <h1>
                     Zarejestruj się
                 </h1>
-                <form>
+                <form method="POST" action="SCRIPT/register.php">
                     <div class="login-element"><br>
                         <label for="login">Login:</label><br>
-                        <input type="text" id="login" name="login" required><br><br>
+                        <input type="text" id="login" name="user" required><br><br>
                     </div>
+
+                    <div class="login-element">
+                        <label for="exampleInputEmail1">Email:</label><br />
+                        <input type="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+                        id="email" name="email" required><br /><br />
+                      </div>
+
                     <div class="login-element">
                         <label for="password">Hasło:</label><br>
-                        <input type="text" id="password" name="password" required method="POST">
+                        <input type="text" id="password" name="pass" required method="POST">
+                        <small id="emailHelp" class="form-text text-white" style="color: white;">Twoje hasło będzie znane tylko tobie!</small>
                     </div>
                     <div class="login-element">
                         <br><br>
-                        <input type="submit" class="btn btn-light" value="Zarejestruj się">
+                        <input type="submit" class="btn btn-light" value="Zarejestruj się" name="register">
                     </div>
                 </form>
                 <br><br>

@@ -2,13 +2,10 @@
 // Define database variables
 
 //localhost:
-$db_host = "host";
-$db_user = "username";
-$db_pass = "userpass";
-$db_name = "dbname";
-
-
-
+$db_host = "localhost";
+$db_user = "root";
+$db_pass = "";
+$db_name = "sistema";
 
 //$mysqli = new mysqli("localhost", "root", "", "sistema");
 $mysqli = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
@@ -18,7 +15,7 @@ if (!$mysqli) {
     printf("Connect failed: %s\n", mysqli_connect_error());
     exit();
 }  else {
-    echo "<i>connection-ok</i><br />";
+    //echo "<i>connection-ok</i><br />";
 }
 
 
