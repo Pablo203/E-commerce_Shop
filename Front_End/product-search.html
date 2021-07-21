@@ -1,23 +1,22 @@
-{% load static %}
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Dream</title>
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="{% static 'shop/bootstrap-4.0.0-dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
 
     <!-- Latest compiled JavaScript -->
-    <script src="{% static 'shop/bootstrap-4.0.0-dist/js/bootstrap.min.js' %}"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
 
     <meta charset="UTF-8">
     <meta author="Paweł Rosa, Kamil Oberaj">
-    <link rel="stylesheet" href="{% static 'shop/main.css' %}">
-    <link rel="stylesheet" href="{% static 'shop/product-search.css' %}">
+    <link rel="stylesheet" href="SCSS/main.css">
+    <link rel="stylesheet" href="SCSS/product_search.css">
 </head>
 
 <body>
@@ -35,8 +34,8 @@
 -->
     <div class="jumbotron-fluid head sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" style="width: 15%;" href="{% url 'shop:index' %}">
-                <img class="img-fluid" src="{% static 'shop/IMG/logo.png' %}">
+            <a class="navbar-brand" style="width: 15%;" href="index.html">
+                <img class="img-fluid" src="IMG/logo.png">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -51,10 +50,10 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <a class="navbar-brand">
-                        <img class="img-fluid" href="{% url 'shop:index' %}" src="{% static 'shop/IMG/cart.png' %}" alt="Something went wrong">
+                        <img class="img-fluid" href="index.html" src="IMG/cart.png" alt="Something went wrong">
                     </a>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'shop:login' %}" style="color: #FFFFFF;">
+                        <a class="nav-link" href="log.html" style="color: #FFFFFF;">
                             <h3 id="log">
                                 Logowanie / <br>
                                 Rejestracja
@@ -70,16 +69,14 @@
 
     <!-- Search Output Area Start -->
 
-    <div class="container searched-category">
-        <b>
-            Wyszukana kategoria:
-        </b>
-        " "
-    </div>
+    
 
     <div class="container">
 
         <div class="row">
+            <div class="container searched-category">
+                    <p class="searched-text">Wyszukana kategoria: " "</p>
+            </div>
             <div class="col-3 filter-menu">
                 <p class="segment-head">
                     Sortowanie:<br>
@@ -100,7 +97,7 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="photo-position">
-                            <img class="img-fluid" src="{% static 'shop/IMG/jam-jar.jpg' %}">
+                            <img class="img-fluid" src="IMG/jam-jar.jpg">
                         </div>
                     </div>
                     <a href="#">
@@ -119,15 +116,20 @@
                     </a>
                 </div>
             </div>
+        </div>
 
-            <a href="#">
-                <div class="col-8 position">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="photo-position">
-                                <img class="img-fluid" src="{% static 'shop/IMG/jam-jar.jpg' %}">
-                            </div>
+        <!--Product Position Area Start-->
+        <div class="row second">
+            <div class="col-4"></div>
+            <div class="col-8 position">
+                <div class="row">
+
+                    <div class="col-6">
+                        <div class="photo-position">
+                            <img class="img-fluid" src="IMG/jam-jar.jpg">
                         </div>
+                    </div>
+                    <a href="#">
                         <div class="col-6">
                             <br>
                             <p>
@@ -139,13 +141,45 @@
                                 127<sup>99</sup>zł
                             </p>
                         </div>
-                    </div>
+                    </a>
                 </div>
-            </a>
-
-
-
+            </div>
         </div>
+        <!--Product Position Area End-->
+
+        <!--Product Position Area Start-->
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-8 position">
+                <div class="row">
+
+                    <div class="col-6">
+                        <div class="photo-position">
+                            <img class="img-fluid" src="IMG/jam-jar.jpg">
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="col-6">
+                            <br>
+                            <p>
+                                <b>
+                                    Produkt 3
+                                </b>
+                            </p><br>
+                            <p>
+                                127<sup>99</sup>zł
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Product Position Area End-->
+
+
+
+
+    </div>
 
     </div>
     <!-- Products List End-->

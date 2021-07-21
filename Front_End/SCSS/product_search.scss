@@ -1,8 +1,14 @@
 .searched-category{
+    position: relative;
     border: 1px solid black;
     margin-top: 3%;
     font-size: 20px;
-    padding: 1%;
+    padding: 3%;
+    font-weight: 700;
+}
+
+.searched-text{
+    margin-top: 1%;
 }
 
 .filter-menu{
@@ -14,6 +20,9 @@
 .segment-head{
     font-size: 20px;
     font-weight: bold;
+    position: relative;
+    padding: 3%;
+    margin-top: 4%;
 }
 
 .segment-body{
@@ -21,6 +30,8 @@
 }
 
 .position{
+    background-color: #EEEEEE;
+    border-radius: 15px;
     margin-left: 33.5%;
     margin-top: 2%;
     border: 1px solid black;
@@ -28,13 +39,28 @@
 }
 
 .first{
-    margin-top: 3.3% !important;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    margin-top: 3.3%;
     border: 1px solid black;
     height: 100%;
+}
+.second{
+    margin-top: -3%;
 }
 
 .photo-position{
     width: 100%;
     padding: 5%;
     //border: 1px solid black;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+sup{
+    text-decoration: underline;
+    font-weight: 550;
 }
