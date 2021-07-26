@@ -4,7 +4,7 @@ $subject = "Dream account verification email";
 
 
 $message = '
-http://localhost/sistema/verify.php?email_US='.$email.'&VerCode_US='.$VerCode.'
+http://localhost/sistema/verify.php?email='.$email.'&code='.$VerCode.'
 
 <!-- Footer Segment Area Start -->
 <footer class="jumbotron-fluid footer">

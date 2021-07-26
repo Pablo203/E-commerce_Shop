@@ -1,6 +1,27 @@
-<?php
+<!DOCTYPE html>
+<html>
 
-echo '
+<head>
+    <title>Dream</title>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta author="Paweł Rosa, Kamil Oberaj">
+    <link rel="stylesheet" href="SCSS/main.css">
+    <link rel="stylesheet" href="SCSS/log.css">
+</head>
+
+<body>
+    <!-- Nav Menu Area Start -->
 <!-- Nav Menu Area Start  flex-row-reverse-->
 <div class="container d-flex justify-content-end">
     <button class="btn btn-light" onclick="languagepl()">
@@ -20,7 +41,7 @@ echo '
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav mr-auto">
-                <form class="form-inline" method="GET" action="product-search.php" >
+                <form class="form-inline" method="GET" action="SCRIPT/general-search.php" >
                     <div class="col-sm-3 col-lg-12">
                         <input type="search" class="form-control" name="search" placeholder="Czego szukasz?" style="width: 70%; float: left;">
                         <button type="submit" class="btn btn-light justify-content-center" name="submit" style="float: left;"
@@ -32,20 +53,29 @@ echo '
                 <a class="navbar-brand">
                     <img class="img-fluid" href="http://localhost/sistema/index.php" src="IMG/cart.png" alt="Something went wrong">
                 </a>
-                <li class="nav-item">
-                    <a class="nav-link" href="log.php" style="color: #FFFFFF;">
-                        <h3 id="log">
-                            Logowanie / <br>
-                            Rejestracja
-                        </h3>
-                    </a>
-                </li>
             </ul>
         </div>
     </nav>
 </div>
-
 <!-- Nav Menu Area End -->
-';
 
+<?php
+session_start();
+echo '<h1 align="center">Witaj <b>'. $_SESSION['user']. '!</b></h1>';
+//$_SESSION['email'];
 ?>
+<br><br>
+<center><h4>Wyloguj !się</h4>
+<form method="POST" action="SCRIPT/logout.php">
+    <input type="submit" class="btn btn-light" value="Wyloguj się!" name="logout">
+</form>
+</center>
+
+    <!-- Footer Segment Area Start -->
+    <?php
+    include('SCRIPT/footer.php');
+    ?>
+    <!-- Footer Segment Area End -->
+</body>
+
+</html>
