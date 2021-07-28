@@ -63,7 +63,7 @@ if(isset($_POST['admin-controls-edit'])) {
         if($result) {
             echo '<br><br>';
             echo '
-            <form method="POST" action="ADMIN/ProductEdit.php"> 
+            <form method="POST" action="ADMIN/ProductEdit.php" enctype="multipart/form-data"> 
             <p>name_PR</p>
             <input type="text" name="prod-edit-name" placeholder="'. $row["name_PR"] .'">
             <p>price_PR</p>
@@ -71,7 +71,7 @@ if(isset($_POST['admin-controls-edit'])) {
             <p>desc_PR</p>
             <input type="text" name="prod-edit-desc" placeholder="'. $row["desc_PR"] .'">
             <p>img_PR</p>
-            <input type="text" name="prod-edit-img" placeholder="'. $row["img_PR"] .'">
+            <input type="file" name="prod-edit-img">
             <p>cat_PR</p>
             <input type="text" name="prod-edit-cat" placeholder="'. $row["cat_PR"] .'">
             <input type="submit" name="prod-edit-submit" value="edit">

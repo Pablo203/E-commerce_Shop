@@ -4,14 +4,13 @@
 
     include('SCRIPT/conn.php');
     //check if user inputted text to search bar
+    $path = 'SCRIPT/ADMIN/MEDIA/';
     
     if(isset($_GET['submit'])) {
         $product = filter_var($_GET['search'], FILTER_SANITIZE_STRING);
         //print_r($_GET);
         $query = "SELECT * FROM products WHERE name_PR LIKE '%$product%'";
-        //echo $query = "SELECT ID_PROD, name_PR, price_PR, desc_PR, img_PR, cat_PR FROM products WHERE name_PR LIKE '%$product%'";
         $result = mysqli_query($mysqli, $query);
-        $info = mysqli_fetch_array($result);
         $rows = mysqli_num_rows($result);
         session_start();
         $_SESSION['ID_PROD'] = $info['ID_PROD'];
@@ -61,7 +60,7 @@
             <div class="container searched-category">
                     <p class="searched-text">Wyszukana fraza: "<?php echo $product;?>"</p>
             </div>
-            <div class="col-3 filter-menu">
+            <!--<div class="col-3 filter-menu">
                 <p class="segment-head">
                     Sortowanie:<br>
                 </p>
@@ -73,36 +72,37 @@
                         <input type="checkbox"> Od najdłuższej dostawy<br>
                     </form>
                 </p>
-            </div>
+            </div>-->
             <div class="col-1"></div>
             <?php
-            for($x = 0; $x < $rows; $x++) {
-                echo '        <div class="row">
+            //
+            while($info = mysqli_fetch_array($result)) {
+                echo '<center><div class="row">
                 <div class="col-4"></div>
                 <div class="col-8 position">
                     <div class="row">
     
                         <div class="col-6">
                             <div class="photo-position">
-                                <img class="img-fluid" src="IMG/jam-jar.jpg">
+                                <img class="img-fluid" src="'.$path.$info['img_PR'].'">
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="product-page.php?ID_PROD='.$info['ID_PROD'].'">
                             <div class="col-6">
                                 <br>
                                 <p>
                                     <b>
-                                        Produkt 3
+                                    '.$info['name_PR'].'
                                     </b>
                                 </p><br>
                                 <p>
-                                    127<sup>99</sup>zł
+                                    '.$info['price_PR'].'
                                 </p>
                             </div>
                         </a>
                     </div>
                 </div>
-            </div>';
+            </div><center>';
             }
             ?>
     </div>
