@@ -20,7 +20,7 @@
         $_SESSION['desc_PR'] = $info['desc_PR'];
         $_SESSION['img_PR'] = $info['img_PR'];
         $_SESSION['cat_PR'] = $info['cat_PR'];
-    
+        session_destroy();
     } else {
         header('Location: ../index.html');
     }

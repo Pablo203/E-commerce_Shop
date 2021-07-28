@@ -31,7 +31,7 @@ if(isset($_POST['login'])) {
             //if verify successfull check:
             if($role == 1){
                 //if user is an admin send him to admin-panel.php
-                header('Location: ../admin-panel.php');
+                header('Location: ../test-panel.php');
             } else { 
                 //if user is normal user than send him to log-success.php
                 header("Location: ../user-panel.php");

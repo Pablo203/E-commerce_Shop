@@ -37,7 +37,7 @@
             // We have a match, activate the account
             $query = "UPDATE users SET confirmed_US = 1 WHERE email_US = '$email' AND VerCode_US = '$VerCode' AND confirmed_US = 0";
             $result = mysqli_query($mysqli, $query);
-            header('Location: log.html');
+            header('Location: log.php');
         } else {
             // No match -> invalid url or account has already been activated.
             echo '<b>Link uzyty lub konto juz zostalo aktywowane</b>';

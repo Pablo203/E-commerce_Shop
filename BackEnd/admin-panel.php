@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<?php
+include('SCRIPT/conn.php');
+?>
 
 <head>
     <title>Dream</title>
@@ -52,18 +55,26 @@
                     <div class="row">
                         <div class="col-5">
                             <div class="form-block">
-                                <form>
+                                <form method="POST" action="SCRIPT/AdminPanelControls.php">
                                     <div class="form-options">
-                                        <input class="form-option" type="radio" id="add" name="add" value="add"> <label
-                                            class="option-text" for="add">Add</label>
-                                        <input class="form-option" type="radio" id="remove" name="remove" value="remove">
+                                        <input class="form-option" type="radio" id="add" name="admin-add-content" value="add">
+                                        <label class="option-text" for="add">Add</label>
+                                        <input class="form-option" type="radio" id="remove" name="admin-remove-content" value="remove">
                                         <label for="remove" class="option-text" >Remove</label>
-                                        <input class="form-option" type="radio" id="show" name="show" value="show">
+                                        <input class="form-option" type="radio" id="show" name="admin-show-content" value="show">
                                         <label for="show" class="option-text" >Show</label>
                                     </div>
                                     <input type="text" class="form-text">
-                                    <input type="submit" class="form-btn" value="Znajdź">
+                                    <input type="admin-submit" class="form-btn" value="Znajdź">
                                 </form>
+                                <?php
+                                if(isset($_POST['admin-add-content']) AND isset($_POST['admin-submit'])) {
+                                    $query = "SELECT ";
+                                    $result = mysqli_query($mysqli, $query);
+                                    $info = mysqli_fetch_array($result);
+                                }
+
+                                ?>
                             </div>
                         </div>
                         <div class="col-7">

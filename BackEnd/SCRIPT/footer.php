@@ -4,7 +4,7 @@ echo '
 <div class="row">
     <div class="col-lg-1 col-sm-1 col-xs-1"></div>
     <div class="col-lg-3 col-sm-6 col-xs-6">
-        <form action="SCRIPT/mail-us.php" method="POST">
+        <form action="http://localhost/sistema/SCRIPT/mail-us.php" method="POST">
             <div class="form-group">
                 <p class="footer-text">
                     <div class="col-sm-6 col-lg-12">

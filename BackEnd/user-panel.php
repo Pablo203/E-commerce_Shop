@@ -65,7 +65,7 @@ echo '<h1 align="center">Witaj <b>'. $_SESSION['user']. '!</b></h1>';
 //$_SESSION['email'];
 ?>
 <br><br>
-<center><h4>Wyloguj !się</h4>
+<center><h4>Wyloguj się!</h4>
 <form method="POST" action="SCRIPT/logout.php">
     <input type="submit" class="btn btn-light" value="Wyloguj się!" name="logout">
 </form>

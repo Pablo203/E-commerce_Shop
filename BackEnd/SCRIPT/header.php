@@ -13,7 +13,7 @@ echo '
 <div class="jumbotron-fluid head sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" style="width: 15%;" href="http://localhost/sistema/index.php">
-            <img class="img-fluid" src="IMG/logo.png">
+            <img class="img-fluid" src="http://localhost/sistema/IMG/logo.png">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -30,10 +30,10 @@ echo '
             </ul>
             <ul class="navbar-nav ml-auto">
                 <a class="navbar-brand">
-                    <img class="img-fluid" href="http://localhost/sistema/index.php" src="IMG/cart.png" alt="Something went wrong">
+                    <img class="img-fluid" href="http://localhost/sistema/index.php" src="http://localhost/sistema/IMG/cart.png" alt="Something went wrong">
                 </a>
                 <li class="nav-item">
-                    <a class="nav-link" href="log.php" style="color: #FFFFFF;">
+                    <a class="nav-link" href="http://localhost/sistema/log.php" style="color: #FFFFFF;">
                         <h3 id="log">
                             Logowanie / <br>
                             Rejestracja
