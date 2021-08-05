@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <a href="product-page.php?ID_PROD='.$info['ID_PROD'].'">
-                            <div class="col-6">
+                            <div class="col-6-7">
                                 <br>
                                 <p>
                                     <b>

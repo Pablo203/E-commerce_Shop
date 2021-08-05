@@ -61,7 +61,8 @@
 
 <?php
 session_start();
-echo '<h1 align="center">Witaj <b>'. $_SESSION['user']. '!</b></h1>';
+echo '<center><h1>Witaj <b>'. $_SESSION['user']. '!</b></h1><br><p>(User ID: '.$_SESSION['UserID'].')</p></center>';
+//print_r($_SESSION);
 //$_SESSION['email'];
 ?>
 <br><br>

@@ -1,0 +1,133 @@
+@import "_variables.scss";
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $font-family;
+}
+
+.nav-link {
+    color: #FFFFFF;
+}
+
+#header-text {
+    font-size: 30px;
+    float: right;
+}
+
+.head {
+    background: $main;
+    margin-top: -1px;
+    width: 100%;
+}
+
+.menu-option {
+    color: $text-color-light;
+}
+
+.language {
+    margin-right: 20px;
+}
+
+#banner {
+    background-color: $main;
+    opacity: 70%;
+    position: relative;
+    color: $text-color;
+    width: 100%;
+}
+
+.navbar-toogler {
+    border-color: #FFFFFF;
+}
+
+.banner-text-head {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.banner-text {
+    font-size: 3vw;
+    opacity: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .banner-text {
+        margin-top: -10%;
+        font-size: 3vh;
+    }
+
+    .banner-text-head {
+        margin-top: -10%;
+        font-size: 3vh;
+    }
+}
+
+.centered {
+    position: absolute;
+    opacity: 120%;
+    top: 30%;
+    left: 10%;
+}
+
+a:hover {
+    color: $text-color-light;
+}
+
+#category-menu {
+    background-color: $secondary;
+}
+
+.footer {
+    background-color: $secondary;
+    color: $text-color-light;
+    margin: 5% 0% -1% 0%;
+    width: 102%;
+}
+
+#category-section {
+    background-color: $background-category;
+    width: 102%;
+}
+
+.category-text-left {
+    margin-top: 6%;
+}
+
+#search-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+
+.photo-right {
+    margin-left: 3%;
+    width: 80%;
+    margin-top: 7%;
+    box-shadow: 30px -20px 0px 0px $shadow;
+}
+
+.photo-left {
+    //height: 70%;
+    width: 80%;
+    margin-top: 7%;
+    margin-left: 10%;
+    box-shadow: -30px -20px 0px 0px $shadow;
+}
+
+.text-center {
+    text-align: center;
+    margin: 5% 0% 5% 0%;
+}
+
+.textarea {
+    margin-bottom: 5%;
+}
+
+.footer-text {
+    margin-top: 5%;
+}
