@@ -14,12 +14,11 @@ if(isset($_POST['login'])) {
 
     if ($rows == 1) {
         //Get data from db to 
-        $query = "SELECT ID_US, user_US, pass_US, email_US, role_US, confirmed_US FROM users WHERE email_Us = '$email'";
+        $query = "SELECT user_US, pass_US, email_US, role_US, confirmed_US FROM users WHERE email_Us = '$email'";
         $result = mysqli_query($mysqli, $query);
         $info = mysqli_fetch_array($result);
         // Create sessions
         session_start();
-        $_SESSION['UserID'] = $info['ID_US'];
         $_SESSION['user'] = $info['user_US'];
         $_SESSION['role'] = $info['role_US'];
         $_SESSION['email'] = $info['email_US'];

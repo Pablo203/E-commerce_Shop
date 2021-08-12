@@ -44,11 +44,10 @@
     <input type="submit" class="btn btn-light" value="Edytuj" name="admin-controls-edit">
     </form>';
 
-    $table_select = $_GET['admin-select-table'];
-    session_destroy();
-    session_start();
-    $_SESSION['table'] = $table_select;
+    //session_destroy();
     if(isset($_GET['AdminConfirmSelect'])) {
+        session_start();
+        $_SESSION['table'] = $_GET['admin-select-table'];
         echo $db_operation_buttons;
     } else {
         //echo 'admin-select-table not set';

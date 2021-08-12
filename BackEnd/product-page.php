@@ -73,7 +73,7 @@ $rows = mysqli_num_rows($result);
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="'.$path.$info['img_PR'].'" alt="product-photo" style="width:1100px; height:500px;">
+                                <img src="'.$path.$info['img_PR'].'" alt="product-photo">
                             </div>
                 </div>
 
@@ -123,11 +123,7 @@ $rows = mysqli_num_rows($result);
         </div>
 
         <div class="container main">
-            Opis produktu:<br>
-            '.$info['desc_PR'].'
-            <br><br>
-            Protuct ID:
-            '.$info['ID_PROD'].'
+            Opis produktu:
         </div>
     </div>
 

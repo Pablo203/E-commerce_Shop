@@ -23,8 +23,10 @@
 <?php include('header.php'); ?>
 
 <?php
-session_destroy();
+
+//session_destroy();
 session_start();
+//print_r($_SESSION);
 $table = $_SESSION['table'];
 
 if(isset($_POST['admin-controls-edit'])) {
@@ -84,7 +86,7 @@ if(isset($_POST['admin-controls-edit'])) {
             echo 'something went wrong! - PRODUCTS (no results or multiple)';
         }
 
-    } else {
+    } else if($table == "users") {
         $query = "SELECT * FROM users WHERE email_US LIKE '%".$_POST['admin-db-lookup']."%'";
         $result = mysqli_query($mysqli, $query);
         $row = mysqli_fetch_array($result);
@@ -108,8 +110,8 @@ if(isset($_POST['admin-controls-edit'])) {
         } else {
             echo 'something went wrong! - USERS (no results or multiple)';
         }
-
-
+    } else {
+        echo "Coś nie tak z wyborem tabeli - zadzwoń do tech-teamu!";
     }
 }
 ?>

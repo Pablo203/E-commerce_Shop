@@ -20,9 +20,9 @@ echo '
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav mr-auto">
-                <form class="form-inline" method="GET" action="http://localhost/sistema/product-search.php?" >
+                <form class="form-inline" method="GET" action="product-search.php" >
                     <div class="col-sm-3 col-lg-12">
-                        <input type="search" class="form-control" name="search" placeholder="Czego szukasz?" style="width: 70%; float: left;">
+                        <input type="search" class="form-control" name="search" placeholder="Czego szukasz?" style="width: 70%; float: left;" required>
                         <button type="submit" class="btn btn-light justify-content-center" name="submit" style="float: left;"
                             id="search-button">&#x1F50D;</button>
                     </div>

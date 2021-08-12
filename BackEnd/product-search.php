@@ -12,7 +12,7 @@
         $query = "SELECT * FROM products WHERE name_PR LIKE '%$product%'";
         $result = mysqli_query($mysqli, $query);
         $rows = mysqli_num_rows($result);
-        session_start();
+/*        session_start();
         $_SESSION['ID_PROD'] = $info['ID_PROD'];
         $_SESSION['name_PR'] = $info['name_PR'];
         $_SESSION['price_PR'] = $info['price_PR'];
@@ -20,6 +20,7 @@
         $_SESSION['img_PR'] = $info['img_PR'];
         $_SESSION['cat_PR'] = $info['cat_PR'];
         session_destroy();
+*/
     } else {
         header('Location: ../index.html');
     }
@@ -88,7 +89,7 @@
                             </div>
                         </div>
                         <a href="product-page.php?ID_PROD='.$info['ID_PROD'].'">
-                            <div class="col-6-7">
+                            <div class="col-6">
                                 <br>
                                 <p>
                                     <b>
